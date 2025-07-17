@@ -5,13 +5,13 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const farerouter = require('./src/routers/fare.router.js');
-const searchrouter = require('./src/routers/search.router.js');
-const seatrouter = require('./src/routers/seat.router.js'); 
-const rechargerouter = require('./src/routers/recharge.router.js'); 
-const moviesrouter = require('./src/routers/movies.router.js'); 
-const signuprouter = require('./src/routers/auth.router.js'); 
-const loginrouter = require('./src/routers/auth.router.js'); 
+const farerouter = require('./fare.router.js');
+const searchrouter = require('./search.router.js');
+const seatrouter = require('./seat.router.js'); 
+const rechargerouter = require('./recharge.router.js'); 
+const moviesrouter = require('./movies.router.js'); 
+const signuprouter = require('./auth.router.js'); 
+const loginrouter = require('./auth.router.js'); 
 
 // Use routes
 app.use('/api/fare', farerouter);
