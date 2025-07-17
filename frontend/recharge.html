@@ -389,7 +389,7 @@ document.getElementById('rechargeForm').addEventListener('submit', async functio
 
   try {
 
-    const rechargeResponse = await fetch('http://localhost:3000/api/recharge', {
+    const rechargeResponse = await fetch('https://payzon-full-stack-project-2.onrender.com/api/auth/recharge', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data)
